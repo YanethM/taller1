@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('TallerEstatico/index', 'SitioController@verCurriculum');
+Route::get('TallerEstatico/verCurriculum/{nombre}', 'SitioController@verCurriculum');
