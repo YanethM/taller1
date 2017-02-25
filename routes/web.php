@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('TallerEstatico/index', 'SitioController@index');
 Route::get('TallerEstatico/verCurriculum/{nombre}', 'SitioController@verCurriculum');
+Route::get('TallerEstatico/encuestaSatisfaccion', 'SitioController@encuestaSatisfaccion');
+

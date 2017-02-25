@@ -18,6 +18,13 @@
             <a href="{!! url('TallerEstatico/verCurriculum/Andres') !!}">Andrés Fernando Henao Vélez</a>
         </fieldset>
     </section>
+    <br>
+    <br>
+    <section id="ENCUESTA">
+        <fieldset>
+            <a href="{!! url('TallerEstatico/encuestaSatisfaccion') !!}">Encuesta de satisfacción</a>
+        </fieldset>
+    </section>
 
 </body>
 </html>

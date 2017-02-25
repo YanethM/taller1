@@ -18,4 +18,8 @@ class SitioController extends Controller
         }
     }
 
+    public function encuestaSatisfaccion() {
+        return view('Sitio/Formulario/FormSatisfaccion');
+    }
+
 }
