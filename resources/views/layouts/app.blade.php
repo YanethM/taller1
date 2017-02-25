@@ -1,5 +1,7 @@
-<!DOCTYPE html> <html>
+<!DOCTYPE html>
+<html lang=”es”>
 <head>
+
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
     <title>Visualizador Hoja de Vida</title>
 </head>
@@ -22,3 +24,5 @@
 
 </body>
 </html>
+
+
