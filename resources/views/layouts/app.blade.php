@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang=”es”>
 <head>
-    <meta charset=”UTF-8″ />
 
-    <title>Hoja de vida</title>
-    <link href=”formularioContacto.css” rel=”stylesheet” type=”text/css” media=”screen” />
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Visualizador Hoja de Vida</title>
 </head>
 <body>
-    @yield('contenido')
-    <section id=”Formulario”>
-    <h1>Enviar mensaje</h1>
-    <form action=” method=”post” enctype=”multipart/form-data” name=”formu”>
-    <fieldset>
-    <label for=”nombre”>Nombre: </label>
-    <br>
+    <div id="encabezado">
+        <p id="name">@yield('nombre')</p>
+        <a href="@yield('email')" target="_blank"><p id="email">@yield('email')</p></a>
+    </div>
 
-    <label for=”correo”>Correo: </label>
-<br>
-    <label for=”mensaje”>Mensaje: </label>
-        <br>
-    <input type=”submit” value=”Enviar mensaje” />
-
-    </fieldset>
-    </form>
+    <section id="informacionacademica">
+        <fieldset>
+            <label for="universitario">Educación media: </label><h5>@yield('nivelEducativo1')</h5>
+            <label for="universitario">Educación profesional: </label><h5>@yield('nivelEducativo2')</h5>
+        </fieldset>
     </section>
+
+    <br>
+    <br>
+    <a href="{!! url('TallerEstatico/index') !!}">Atras</a>
 
 </body>
 </html>
